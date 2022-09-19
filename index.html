@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style..css">
+    <link rel="stylesheet" href="./reponsive.css">
+    <title>Zing mp3</title>
+</head>
+<body>
+    <div id="app">
+        <div id="player" class="grid">
+            <div class="row no-gutters app-page">
+                <div id="sidebar" class="col l-2 m-0 c-0">
+                    <div class="navbar-logo">
+                        <img src="https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="">
+                    </div>
+                    <div class="navbar-main">
+                        <ul class="navbar-list">
+                            <li class="navbar-list__item active">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-speaker"></i>
+                                    Cá Nhân
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                <i class="icon-sidebar bi bi-vinyl"></i>
+                                    Khám Phá
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-music-note-list"></i>
+                                    #zingchart
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-soundwave"></i>
+                                    Radio
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-archive"></i>
+                                    Theo Dõi
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-divide">
+                        <ul class="navbar-list navbar-divide-list">
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-music-note-beamed"></i>
+                                    Nhạc Mới
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-slack"></i>
+                                    Thể Loại
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-star"></i>
+                                    Top 100
+                                </a></li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <i class="icon-sidebar bi bi-camera-video"></i>
+                                    MV
+                                </a></li>
+                        </ul>
+
+                        <div class="navbar-divide__banner">
+                            <div class="navbar-divide__baneer-content">
+                                <h4>Nghe nhạc không quảng cáo cùng kho nhạc VIP</h4>
+                                <button><a href="">MUA VIP</a></button>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-list navbar-divide-list navbar-library ">
+                            <h4>
+                                Thư viện
+                                <div class="icon-library__edit">
+                                    <i class="pen-edit bi bi-pencil"></i>
+                                    <span class="icon-library__edit-popoc">Chỉnh sửa</span>
+                                </div>
+                            </h4>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <img class="icon-library" src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg" alt="">
+                                    Bài Hát
+                                <i class="icon-library-play bi bi-play-circle"></i>
+                                </a>
+                            </li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <img class="icon-library" src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg" alt="">
+                                    Playlist
+                                </a>
+                            </li>
+                            <li class="navbar-list__item">
+                                <a href="">
+                                    <img class="icon-library" src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg" alt="">
+                                    Gần đây
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        
+                    </div>
+                    <div class="navbar-creat__playlist">
+                        <h3> + Tạo playlist mới</h3>
+                    </div>
+
+                </div>
+
+                <div id="mainpage" class="col l-10 m-12 c-12">
+                    <div class="header row no-gutters">
+                   
+                    <div class="col l-8 m-12 c-12">
+                        <div class="option-search">
+                            <div class="option-search__btn">
+                                <button>
+                                    <i class="bi bi-arrow-left"></i>
+                                </button>
+                                <button class="no-next">
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="header-search">
+                                <i class="bi bi-search"></i>
+                                <input type="text" placeholder="Tìm kiếm bài hát, Nghệ sĩ, Lời bài hát">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4">
+                        <div class="option-level">
+                           <div class="list-option option-level-theme">
+                           <span class="header-poppoc">Chủ đề</span>
+                            <svg width="25" height="25" class="header__nav-icon" viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%"><stop offset="0%" stop-color="#F81212"></stop><stop offset="100%" stop-color="red"></stop></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stop-color="#00F"></stop><stop offset="100%" stop-color="#0031FF"></stop></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stop-color="#FFA600"></stop><stop offset="100%" stop-color="orange"></stop></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stop-color="#13EFEC"></stop><stop offset="100%" stop-color="#00E8DF"></stop></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path><path id="jggzvnjgfc" d="M0 0H20V20H0z"></path><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlink:href="#qtpqrj1oda"></use></mask><use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda"></use><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlink:href="#jggzvnjgfc"></use></mask><use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use><circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)"></circle><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)"></circle><circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)"></circle><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)"></circle></g></g><use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m"></use></g></svg>
+                           </div>
+                           <div class="list-option option-level-vip">
+                           <span class="header-poppoc popoc-level-vip">Nâng Cấp VIP</span>
+                            <i class="bi bi-gem"></i>
+                           </div>
+                           <div class="list-option option-level-up">
+                           <span class="header-poppoc">Tải lên</span>
+                            <i class="bi bi-upload"></i>
+                           </div>
+                           <div class="list-option option-level-seting">
+                           <span class="header-poppoc">Cài đặt</span>
+                            <i class="bi bi-gear"></i>
+                           </div>
+                           <div class="option-level-user">
+                            <img src="https://th.bing.com/th/id/OIP.BhNH49QpKoFeVJmwrg98TgHaHu?pid=ImgDet&rs=1" alt="">
+                           </div>
+                        </div>
+                    </div>
+        
+                    </div>
+
+                    <div class="header-personal row no-gutters">
+                    <div class="col l-12 c-12 m-12 ">
+                        <div class="header-personal__info">
+                            <img src="https://th.bing.com/th/id/OIP.AASqALIbD5AKvfxOM6nSBwHaHK?pid=ImgDet&rs=1" alt="" class="header-personal__avatar">
+                            <h4 class="header-personal__name">Lê Hoài Thanh</h4>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="header-select row no-gutters">
+                        <div class="col l-12">
+                            <div class="header-select__container">
+                                <ul class="header-select__list">
+                                    <li class="header-select__item active">
+                                        <a href="">Tổng quan</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">Bài hát</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">playlist</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">album</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">mv</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">nghệ sĩ</a>
+                                    </li>
+                                    <li class="header-select__item">
+                                        <a href="">tải lên</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="body-playing row no-gutters">
+                        <div class="col l-12 hide-on-mobile-tablet">
+                            <div class="body-action">
+                                <h4 class="body-action__title">
+                                    Bài Hát
+                                    <i class="bi bi-chevron-compact-right"></i>
+                                </h4>
+                                <div class="body-action__right">
+                                    <div class="body-action__up" >
+                                        <i class="bi bi-upload"></i>
+                                        Tải Lên
+                                    </div>
+                                    <div class="body-action__playall">
+                                        <i class="bi bi-play-fill"></i>
+                                        Phát Tất cả
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-12">
+                            <div class="row">
+                                <div class="col l-4 hide-on-mobile-tablet">
+                                    <!-- slider -->
+                                    <div class="container_profile--layout__sum--foot">
+                                        <div class="container_profile--layout__sum--foot_img hion-on-mobile">
+                                            <li class="container_profile--layout__sum--foot_img-item second hion-on-mobile" style="background-image: url(http://www.thegioidienanh.vn/stores/news_dataimages/thanhtan/052017/05/00/5727_son-tung-m-tp-3.jpg)">
+        
+                                            </li>
+                                            <li class="container_profile--layout__sum--foot_img-item third hion-on-mobile" style="background-image: url(https://static2.yan.vn/YanNews/2167221/201908/son-tung-tang-day-chuyen-hieu-cho-fan-tai-meetgreet-da-nang-b216c9e3.jpg)">
+                                                
+                                            </li>
+                                            <li class="container_profile--layout__sum--foot_img-item first hion-on-mobile" style="background-image: url(https://i0.wp.com/hellovpop.com/wp-content/uploads/2019/07/son-tung-2.jpg?fit=1500%2C1000&ssl=1)">
+                                                
+                                            </li>
+                                        </div>
+                                        <div class="container_profile--layout__sum--foot_list"></div>
+                                    </div>
+                                </div>
+                                <div class="col l-8 c-12 m-12">
+                                    <ul class="body-list">
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-song">
+                    <div id="player-controls__container">
+                        <div class="row no-gutters">
+                            <div class="col l-4 player__controls-song">
+                                <div class="controls-song__media ">
+                                    <div class="controls-song__media-thumb" >
+                                        <img class="thumb" src="" alt="">
+                                        <div class="icon-thumb">
+                                            <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-1">
+                                                <path
+                                                    d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                                                ></path>
+                                            </svg>
+                                            <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-2">
+                                                <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                                            </svg>
+                                            <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-3">
+                                                <path
+                                                    d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                                                ></path>
+                                            </svg>
+                                            <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-4">
+                                                <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="controls-song__media-title marquee ">
+                                        <div class="controls-song__name"></div>
+                                        <div class="controls-song__singer"></div>
+                                    </div>
+                                    <div class="controls-song__favorites">
+                                        <span class="controls-song__heart icon-heart">
+                                            <i class="icon-heart-empty bi bi-heart"></i>
+                                            <i class="icon-heart-color bi bi-heart-fill"></i>
+
+                                        </span>
+                                        <span class="controls-song__more">...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 player__controls">
+                                <div class="player__controls-btn">
+                                    <span class="icon-btn__controls  btn-random" style="font-size: 20px; ">
+                                        <i class="bi bi-shuffle"></i>
+                                    </span>
+                                    <span class="icon-btn__controls btn-prev">
+                                        <i class="bi bi-skip-start-fill"></i>
+                                    </span>
+                                    <span class="play-btn icon-btn__controls"
+                                    style="font-size: 35px;">
+                                        <i class="icon-pause bi bi-pause-fill" ></i>
+                                        <i class="icon-play bi bi-play-fill"></i>
+
+                                    </span>
+                                    <span class="icon-btn__controls btn-next">
+                                        <i class="bi bi-skip-end-fill"></i>
+                                    </span>
+                                    <span class="icon-btn__controls btn-repeat" style="font-size: 20px;">
+                                        <i class="bi bi-arrow-repeat "></i>
+                                    </span>
+                                </div>
+                                <div class="player__controls-progress">
+                                    <span class="starttime song-time song-runtime">0:00</span>
+                                    <div class="propress">
+                                        <input class="propress-main" id="my-propress" type="range" value="0" step="1" min="0" max="100">
+                                        <div class="propress-track"></div>
+                                        <!-- <div class="propressBar"></div> -->
+                                    </div>
+                                    <span class="endtime song-time song-remainingtime">--/--</span>
+                                </div>
+                            </div>
+                            <div class="col l-4 player__option">
+                                <div class="volume-icon">
+                                    <i class="bi bi-volume-up-fill"></i>
+                                    <input class="propress-volume" type="range" value="100" step="1" min="0" max="100">
+                                    <div class="player__play-list">
+                                        <i class="bi bi-music-note-list"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+        
+    </div>
+    <div class="block-modal__theme ">
+        <div class="theme-modal__container grid ">
+            <div class="theme-header">
+                <h3>Giao Diện</h3>
+                <span class="btn-close"><i class="bi bi-x"></i></span>
+            </div>
+            <div class="theme-content grid" style="padding: 26px;">
+                <div class="row theme-list">
+                    <div class="col l-12">Chủ đề</div>
+                    <div class="col l-2 theme-item">
+                        <div>Zing Music Awards</div>
+                        <img src="./theme/theme1.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-theme1">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item">
+                        <div>Zing Music Awards</div>
+                        <img src="./theme/theme2.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-theme2">áp dụng</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row theme-list">
+                    <div class="col l-12 ">Nghệ Sĩ</div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>Rosé</div>
+                        <img src="./theme/artist1.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist1">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>IU</div>
+                        <img src="./theme/artist2.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist2">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>Ji Chang Wook</div>
+                        <img src="./theme/artist3.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist3">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>Lisa</div>
+                        <img src="./theme/artist4.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist4">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>Jennie Kim</div>
+                        <img src="./theme/artist5.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist5">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item theme-artist">
+                        <div>Jisoo</div>
+                        <img src="./theme/artist6.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme btn-artist6">áp dụng</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row theme-list">
+                    <div class="col l-12">Màu sắc</div>
+                    <div class="col l-2 theme-item">
+                        <div>Zing Music Awards</div>
+                        <img src="./theme/theme1.jpg" alt="">
+                        <div class="select-theme">
+                            <button class="btn-theme">áp dụng</button>
+                        </div>
+                    </div>
+                    <div class="col l-2 theme-item">
+                        <div>Zing Music Awards</div>
+                        <img src="./theme/theme2.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./main.js"></script> -->
+    <script src="./app.js"></script>
+</body>
+</html>
